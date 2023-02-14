@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const Options = (props) => {
-  let { correct, incorrect, category, option , quesNoIndex, score, setScore, setRight, setNextQuesDisabled} = props;
+  let { correct, category, option , quesNoIndex, score, setScore, setRight, setNextQuesDisabled} = props;
   const colorRef = useRef(0);
   const [rightAns, setRightAns] = useState("");
   const [attempted, setAttempted] = useState(false);
