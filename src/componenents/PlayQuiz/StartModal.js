@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 function StartModal(props) {
-  const { show, setModalShow, isOpen, setOpen } = props;
+  const {setModalShow, setOpen } = props;
   const handlarStart = () => {
     setModalShow(false);
     setOpen(true);
