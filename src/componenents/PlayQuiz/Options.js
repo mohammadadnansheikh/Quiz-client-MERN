@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const Options = (props) => {
-  let { correct, incorrect, category, option , quesNoIndex, score, setScore, right, setRight, nextQuesDisabled, setNextQuesDisabled} = props;
+  let { correct, incorrect, category, option , quesNoIndex, score, setScore, setRight, setNextQuesDisabled} = props;
   const colorRef = useRef(0);
   const [rightAns, setRightAns] = useState("");
   const [attempted, setAttempted] = useState(false);
@@ -10,7 +10,7 @@ const Options = (props) => {
    setAttempted(false)
    setDisabled(false)
     console.log(quesNoIndex)
-    console.log(incorrect, correct)
+//     console.log(incorrect, correct)
   },[quesNoIndex])
   const checkAnswer = (e) => {
     setNextQuesDisabled(false)
