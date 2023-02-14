@@ -11,7 +11,7 @@ const userInfo = {
   email: "",
   password: "",
 };
-let detail = "";
+
 const Register = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState(userInfo);
@@ -36,7 +36,7 @@ const Register = () => {
     
     
      if(res){
-      const data = await res.data;
+      await res.data;
       setUser({});
       setMessage("Registered Successfully")
       navigate("/login");
